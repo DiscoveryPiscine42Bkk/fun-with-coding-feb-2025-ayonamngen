@@ -1,0 +1,3 @@
+#!/bin/bash
+find ~/discovery_piscine -mindepth 0 ! -name ".*" -exec basename {} \; | awk '{printf "%s%s",sep,$0; sep=","} END {print ""}'
+
