@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.cell {
+    border: 1px solid black;
+    padding: 50px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+}
+.column-1 {
+    background-color: rgb(124, 216, 138);
+}
+.column-2 {
+    background-color: rgb(238, 144, 144);
+}
+
+@media (max-width: 600px) {
+    .table {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    .cell {
+        font-size: 24px;
+        text-align: left;
+    }
+}
