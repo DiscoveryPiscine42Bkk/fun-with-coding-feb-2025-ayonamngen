@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: rgb(255, 162, 219);
+            text-align: center;
+            margin: 0;
+            padding: 0px;
+        }
+        h1 {
+            font-size: 60px;
+            color: white;
+            text-align: center;
+        }
+        .shop-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .shop-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 10px;
+        }
+        img {
+            width: 250px;           
+        }
+        hr {
+            width: 80%;
+            margin: 40px auto;
+            border: 1px solid black;
+        }
+        .copyright {
+            font-style: italic;
+            font-family: monospace;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .shop-link {
+            font-size: 16px;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cutie Doll @ Shopee!</h1>
+    <div class="shop-container">
+        <div class="shop-item">
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7rask-m4wr2bgwspo7f0.webp" alt="Bunny Doll">
+            <p><a class="shop-link" href="https://shopee.co.th/%E0%B8%95%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B8%95%E0%B8%B2-Jellycat-Bunny-%E0%B8%99%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%9C%E0%B8%B4%E0%B8%A7-%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2-jellycat-%E0%B8%95%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B8%95%E0%B8%B2-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%94%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1-%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%A7-%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%97%E0%B8%A1-i.744976793.28923297401?sp_atk=08f9c728-7801-4876-8346-c63c111e4394&xptdk=08f9c728-7801-4876-8346-c63c111e4394" target="_blank">Bunny Doll @ Shopee</a></p>
+        </div>
+        <div class="shop-item">
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7rasl-m5cez2vxdd6fe6@resize_w900_nl.webp" alt="Cake Doll">
+            <p><a class="shop-link" href="https://shopee.co.th/%E0%B8%95%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B8%95%E0%B8%B2-Jellycat-Cake-%E0%B8%99%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%9C%E0%B8%B4%E0%B8%A7-%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2-jellycat-%E0%B8%95%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B8%95%E0%B8%B2-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%94%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1-%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%A7-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%A7%E0%B8%B1%E0%B8%8D%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94-i.744976793.29274355106" target="_blank">Cake Doll @ Shopee</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+        © rpaungra 2025
+    </div>
+
+</body>
+</html>
