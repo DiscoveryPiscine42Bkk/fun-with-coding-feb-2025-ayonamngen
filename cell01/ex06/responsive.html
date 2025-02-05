@@ -5,39 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table with Divs</title>
     <style>
-        .table {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-        }
-        .cell {
-            border: 1px solid black;
-            padding: 50px;
-            padding-left: 0px;
-            text-align: left;
-            font-size: 20px;
-        }
-        .column-1 {
-            background-color: rgb(124, 216, 138);
-        }
-        .column-2 {
-            background-color: rgb(238, 144, 144);
-        }
-        @media (max-width: 768px) {
-            .table {
-                grid-template-columns: 1fr;
-            }
-            .cell {
-                padding: 30px;
-                font-size: 18px;
-            }
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.cell {
+    border: 1px solid black;
+    padding: 50px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+}
+.column-1 {
+    background-color: rgb(124, 216, 138);
+}
+.column-2 {
+    background-color: rgb(238, 144, 144);
+}
+
+@media (max-width: 600px) {
+    .table {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    .cell {
+        font-size: 24px;
+        text-align: left;
+    }
+}
+
     </style>
 </head>
 <body>
     <div class="table">
         <div class="cell column-1">Yes</div>
         <div class="cell column-2">No</div>
+     
+
     </div>
 </body>
 </html>
