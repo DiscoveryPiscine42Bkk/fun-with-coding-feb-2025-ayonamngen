@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first {
+    background-image: url('https://mblogthumb-phinf.pstatic.net/20161014_2/annatomo_1476416891349gaiHb_JPEG/%20쿡%20%20ȣ%20%20%20%20õ.JPG?type=w800');
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second {
+    background-image: url('https://i.pinimg.com/originals/e7/7f/be/e77fbe3ad3032e62e39e2cd2a07b1f10.jpg');
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
