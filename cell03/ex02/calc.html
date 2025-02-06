@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px; /* อยู่ตรงกลาง */
+        }
+        input, select, button {
+            font-size: 18px;
+            margin: 10px;
+            padding: 8px; /* 3อัน ขนาดกับระยะห่าง */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Basic Calculator</h2>
+<!-- เลขแรก -->
+   <input type="number" id="num1" placeholder="Enter number" min="0"> 
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="number" id="num2" placeholder="Enter number" min="0">
+
+    <button onclick="calculate()">Try me!</button>
+
+    <script>
+        function calculate() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let operator = document.getElementById("operator").value;
+
+            // แปลงเป็นตัวเลข
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            // เป็นเลข กับ ติดลบ
+            if (isNaN(num1) || isNaN(num2) || num1 < 0 || num2 < 0) {
+                alert("Error :(");
+                return;
+            }
+
+            let result; //เก็บไว้ก่อน
+
+            // หาร0
+            if (operator === "/" || operator === "%") {
+                if (num2 === 0) {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+            }
+
+            // คิดเลขตามที่เลือก
+            switch (operator) {
+                case "+": result = num1 + num2; break;
+                case "-": result = num1 - num2; break;
+                case "*": result = num1 * num2; break;
+                case "/": result = num1 / num2; break;
+                case "%": result = num1 % num2; break;
+                default: result = "Error";
+            }
+
+            alert("Result: " + result);
+            console.log("Result:", result);
+        }
+
+        // คำสั่งตั้งเวลาเรีบก ใช้หน่่อย
+        setInterval(() => {
+            alert("Please, use me...");
+        }, 30000);
+    </script>
+
+</body>
+</html>
