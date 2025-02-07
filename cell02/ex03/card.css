@@ -31,7 +31,17 @@
 }
 
 .contact {
+    background-color: #900c31; /* สีพื้นหลัง */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    color: #881f5c;
-    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
 }
